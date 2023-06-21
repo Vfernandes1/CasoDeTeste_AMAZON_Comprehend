@@ -164,6 +164,8 @@ Segue abaixo um exemplo do output retornado pelo serviço, utilizando a operaç�
 
 Link para a documentação: https://docs.aws.amazon.com/pt_br/comprehend/latest/dg/how-sentiment.html / https://docs.aws.amazon.com/pt_br/comprehend/latest/dg/how-targeted-sentiment.html
 
+Repositório com aplicação real do serviço de análise de sentimento, fornecido pelo Amazon Comprehend: https://github.com/tanyazyabkina/AWS_Comprehend_Sentiment_Analysis
+
 ---------
 
 ### Extração de Frases-Chave 
@@ -181,6 +183,8 @@ As operações para este serviço são:
 3. StartKeyPhrasesDetectionJob 
 
 Link da documentação: https://docs.aws.amazon.com/pt_br/comprehend/latest/dg/how-key-phrases.html
+
+Vídeo de exemplificação da utilização do serviço de extração de frases-chave, do Amazon Comprehend: https://www.youtube.com/watch?v=UoNKG1A_X40
 
 --------
 
