@@ -1,10 +1,18 @@
-# CasoDeTeste_AMAZON_Comprehend
+#  Estudo da ferramenta Amazon Comprehend
+
+Estudo das ferramentas em nuvens comerciais que fornecem soluções de PLN.
+
+O objetivo desta atividade é realizar um levantamento das ferramentas de PLN presentes em uma nuvem comercial.
+
+Nuvem Comercial escolhida: **Amazon Comprehend**
 
 **O que é o Amazon Comprehend?**
 
-O Amazon Comprehend é um serviço de processamento de linguagem natural (NLP) que usa machine learning para extrair insights sobre arquivos, textos e documentos em si. Ele pode ser utilizado para reconhecimento de entidades, frases-chave, idioma, sentimentos e outros elementos comuns em um documento. 
+O Amazon Comprehend é um serviço de processamento de linguagem natural (NLP) que usa machine learning para extrair insights sobre arquivos, textos e documentos em si. Ele pode ser utilizado para reconhecimento de entidades, frases-chave, idioma, sentimentos e outros elementos comuns em um documento. A ferramenta do Amazon Comprehend também fornece várias APIs que podem usadas para criar novos produtos baseados na compreensão da estrutura dos documentos, com base no objetivo de implementação.
 
-**Nuvem Comercial**
+A ferramenta pode ser considerada um serviço de nuvem comercial pois fornece um sistema embutido, em nuvem, que amplia a capacidade de amazenamento e rede para agregação de sistemas e programas com atuação rápida, fácil e econômica. Sendo assim, o Amazon Comprehend pode ser utilizado para melhorar seus processos de negócios, como atendimento ao cliente, análise de mídia social, pesquisa de mercado, gerenciamento de documentos e muitas outras tarefas.
+
+### Operações nos serviços do Amazon Comprehend
 
 As operações são comandos que determinam o nível de busca, e análise que será feita. O peso e limitação de cada uma das operações é padrão para cada um dos serviços.
 
@@ -42,6 +50,8 @@ Para fins de implementação, pode selecionar a operação "DetectDominantLangua
 }
 
 ```
+
+Aqui segue um repositório com exemplificação da aplicação do serviço de detecção de idiomas, para tradução e transcrição de relatórios médicos: https://github.com/aws-samples/amazon-translate-with-comprehend-medical
 
 Link da documentação: https://docs.aws.amazon.com/pt_br/comprehend/latest/dg/how-languages.html
 
@@ -100,6 +110,8 @@ As operações para detectar entidades em um documento ou conjunto de documentos
   ```
 
 Para uma aplicação com maior nível de complexidade, há também o serviço de Reconhecimento de Entidades Nomeadas Personalizadas (com a operação "CreateEntityRecognizer"), que permite treinar um modelo personalizado para reconhecer entidades específicas do domínio do usuário. Isto seria um passo além, seguindo o mesmo core apresentado pelo serviço de Reconhecimento de Entidades padrão do Amazon Comprehend.
+
+Segue repositório com código exemplificando a aplicação da customização no reconhecimento de entidades: https://github.com/aws-samples/amazon-custom-entity-recognition-textract-comprehend
 
 Link para a documentação: https://docs.aws.amazon.com/pt_br/comprehend/latest/dg/how-entities.html 
 
@@ -181,10 +193,25 @@ Na arquitetura apresentada aqui na documentação a API do Amazon Transcribe pod
 
 Após isso, temos o processamento de uma função Lambda (serviço que roda funções de maneira virtual), apenas para termos de segurança e acesso. E por fim, a utilização do serviço Amazon Transcribe para transcrição dos dados do vídeo ou arquivo de voz, e depois isto é passado para o Amazon Comprehend que realiza a análise de conteúdo, checa entidades (nomes, datas, localização) e pode ser utilizado também para outros tipos de inferência a partir de processamento de linguagem natural.
 
-- Link da documentação: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/analyze-speech-in-real-time-using-amazon-transcribe-and-amazon-comprehend.html
+Link da documentação: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/analyze-speech-in-real-time-using-amazon-transcribe-and-amazon-comprehend.html
 
-  -----------------------
+Aplicação real do Amazon Comprehend e Amazon Transcribe para Podcast: https://github.com/aws-samples/amazon-transcribe-comprehend-podcast
 
-  ## Referências
+-----------------------
 
-  
+## Referências
+
+Documentação do Amazon Comprehend - Como Analisar Sentimentos:
+Amazon Web Services. Amazon Comprehend – Como Analisar Sentimentos. Disponível em: https://docs.aws.amazon.com/pt_br/comprehend/latest/dg/how-sentiment.html. Acesso em: 20 jun. 2023.
+
+Documentação do Amazon Comprehend - Como Analisar Sentimentos Segmentados:
+Amazon Web Services. Amazon Comprehend – Como Analisar Sentimentos Segmentados. Disponível em: https://docs.aws.amazon.com/pt_br/comprehend/latest/dg/how-targeted-sentiment.html. Acesso em: 20 jun. 2023.
+
+Documentação do Amazon Comprehend - Como Extrair Frases-Chave:
+Amazon Web Services. Amazon Comprehend – Como Extrair Frases-Chave. Disponível em: https://docs.aws.amazon.com/pt_br/comprehend/latest/dg/how-key-phrases.html. Acesso em: 20 jun. 2023.
+
+Documentação do Amazon Comprehend - Como Extrair Entidades:
+Amazon Web Services. Amazon Comprehend – Como Extrair Entidades. Disponível em: https://docs.aws.amazon.com/pt_br/comprehend/latest/dg/how-entities.html. Acesso em: 20 jun. 2023.
+
+Documentação do Amazon Comprehend - Como Detectar Idiomas:
+Amazon Web Services. Amazon Comprehend – Como Detectar Idiomas. Disponível em: https://docs.aws.amazon.com/pt_br/comprehend/latest/dg/how-languages.html. Acesso em: 20 jun. 2023.
